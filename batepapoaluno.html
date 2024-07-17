@@ -1,0 +1,56 @@
+
+
+
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+  <script src="bate-papo.js"></script>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="batepapoaluno.css">
+    <title>Tikinder</title>
+
+</head>
+<body>
+  <div class ="nav1"> 
+    <div class ="barradepesquisa"></div>
+  </div>
+
+  <div class = "imagem">
+    <img src="images/Magnifying_Glass_Plus.png">
+    </div>
+     
+   <div class = "nav2">
+        <div class ="divisor">
+            <h1 class = "logo" onclick="redirecionar_home()">Tikinder</h1>
+              <div id="local-imagem"></div>
+            </div>
+        </div>
+        <div class ="divisorinferior">
+          <h3 class="nome" id="nome"></h3>
+          <div class ="divisorlateral"></div>
+        </div>
+    </div>
+    
+    <div id = "chat">
+     <div class = "chatbox">
+      <div class = "input">
+        <input type = "text"  id = "chat" placeholder = " Insira sua mensagem...">
+         <button onclick= "batepapo()">Enviar</button>
+          <div class = "messageContainer">
+            <p id = "vazio"> Olá aluno(a), o que posso ajudar? </p>
+          </div>
+
+          <div class = "messageContainer_aluno">
+            <p id="vazio">Oi Professor(a), eu tenho duvida na questão 17 da nossa aula de ontem</p>
+
+          </div>
+
+          <div class = "messageContainer1">
+            <p id = "vazio"> Opa, podemos marcar uma reunião as 18 horas para resolver esta questão </p>
+          </div>
+      </div>
+     </div>
+    </div>
+</body>
+</html>

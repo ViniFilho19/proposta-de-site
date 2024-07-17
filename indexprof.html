@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikinder</title>
+    <link rel="stylesheet" href="styleprof.css">
+</head>
+<body>
+        <div class="navbar">
+            <div class="header-inner-content">
+                <h1 class="logo" id="logo" onclick="redirecionar_home()">TIKINDER</h1>
+            </div>
+        </div>
+
+        <div id="infoContainer">
+            <div class="info-content">
+                <h2>Prezado Professor/Educador,</h2>
+                <p>
+                    Para garantir que nossos alunos recebam a melhor educação possível, precisamos verificar suas qualificações e experiência. O processo de verificação é simples, mas fundamental para que você possa ser remunerado pelo seu trabalho.
+                </p>
+                <p>
+                    <strong>O que você precisa enviar:</strong><br>
+                    1. <strong>Currículo</strong>: Detalhando sua trajetória profissional e acadêmica.<br>
+                    2. <strong>Experiência Profissional</strong>: Descreva as suas experiências anteriores no ensino.<br>
+                    3. <strong>Escolaridade</strong>: Comprovação de suas formações acadêmicas.<br>
+                    4. <strong>Certificados</strong>: Qualquer certificado adicional que comprove sua especialização e competência.
+                </p>
+                <p>
+                    <strong>Importante:</strong><br>
+                    <strong>Envio Completo</strong>: Somente após o envio de todos os documentos acima, sua inscrição será revisada.<br>
+                    <strong>Revisão</strong>: Nossa equipe analisará suas informações e, se tudo estiver correto, você será aprovado para receber pagamentos.<br>
+                    <strong>Caso não envie</strong>: Se não apresentar os documentos necessários, você não receberá o cargo de professor, porém, ganhará uma taxa de AdSense.
+                </p>
+                <p>
+                    Agradecemos pela compreensão.
+                </p>
+                <p>
+                    Atenciosamente,<br>
+                    Equipe Tikinder
+                </p>
+                <button id="okButton">OK</button>
+            </div>
+        </div>
+
+        <div class="tela-cadastro">
+           
+
+            <div class="form">
+                <form action="#">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Bem-Vindo Professor</h1>
+                        </div>
+                    </div>
+    
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="firstname">Primeiro Nome</label>
+                            <input id="firstname_prof" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="lastname">Sobrenome</label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input id="email_prof" type="email" name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="password">Senha</label>
+                            <input id="password_prof" type="password" name="password" placeholder="Digite sua senha" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="telefone">Telefone</label>
+                            <input id="telefone" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="escolaridade">Escolaridade</label>
+                            <select id="escolaridade" name="escolaridade" required>
+                                <option value="" disabled selected>Selecione sua escolaridade</option>
+                                <option value="medio">Médio</option>
+                                <option value="graduacao">Superior (Graduação)</option>
+                                <option value="pos-graduacao">Pós-graduação</option>
+                                <option value="mestrado">Mestrado</option>
+                                <option value="doutorado">Doutorado</option>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="especialidade">Especialização</label>
+                            <select id="especialidade" name="especialidade" required>
+                                <option value="" disabled selected>Selecione sua especialidade</option>
+                                <option value="engenharia">Engenharia</option>
+                                <option value="informatica">Informática</option>
+                                <option value="saude">Saúde</option>
+                                <option value="educacao">Educação</option>
+                                <option value="negocios">Negócios</option>
+                                <option value="direito">Direito</option>
+                                <option value="arte">Arte</option>
+                                <option value="ciencia">Ciência</option>
+                                <option value="agricultura">Agricultura</option>
+                                <option value="meio-ambiente">Meio Ambiente</option>
+                                <option value="psicologia">Psicologia</option>
+                                <option value="linguas">Línguas</option>
+                                <option value="design">Design</option>
+                                <option value="outros">Outros</option>
+                                <option value="não">Não tenho</option>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="experiência">Experiência Profissional</label>
+                            <input id="experiência" type="text" name="experiência" placeholder="Digite sua experiência" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="curriculo">Upload de Currículo (opcional)</label>
+                            <input id="curriculo" type="file" name="curriculo" accept="application/pdf">
+                        </div>
+        
+                        <div class="input-box">
+                            <label for="certificates">Upload de Certificados (opcional)</label>
+                            <input id="certificates" type="file" name="certificates" accept="application/pdf">
+                        </div>
+    
+                    </div>
+    
+                    <div class="gender-inputs">
+                        <div class="gender-title">
+                            <h6>Gênero</h6>
+                        </div>
+    
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input id="female" type="radio" name="gender" required>
+                                <label for="female">Feminino</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="male" type="radio" name="gender" required>
+                                <label for="male">Masculino</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="others" type="radio" name="gender" required>
+                                <label for="others">Outros</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="none" type="radio" name="gender" required>
+                                <label for="none">Prefiro não dizer</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="continue-button">
+                        <button id="btn_conti"><a href="#">Continuar</a> </button>
+                    </div>
+
+                    <div class="account_enter">
+                        <p id="enter"><a href="#enter"></a>Já tenho uma conta</p>
+
+                    </div>
+
+                </form>
+            </div>
+            <script src="scriptprof.js"></script>
+        </div>
+</body>
+</html>
